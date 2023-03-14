@@ -2,5 +2,6 @@
 layout: post
 title: "My Notebook Post Bokeh"
 ---
-
+<div>
 {% include week6.html %}
+</div>
