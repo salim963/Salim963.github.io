@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to my side, ^_^ this is Salim :) "
+title:  "Welcome to Jekyll!"
 date:   2023-03-14 10:04:25 +0100
 categories: jekyll update
 ---
