@@ -6,6 +6,3 @@ categories: [jupyter]
 tags: [ipynb]
 ---
 
-{% nbconvert ../week6.ipynb --output-dir=_includes --output=index.html %}
-{% include index.html %}
-
