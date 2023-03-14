@@ -1,0 +1,320 @@
+
+---
+layout: post
+title: "My Notebook Post"
+categories: [jupyter]
+tags: [ipynb]
+---
+
+## Part 2
+
+1. If you haven't installed it yet please do so. You can simply follow these steps
+2. To include Bokeh in your notebooks you can follow the Bokeh: Using with Jupyter guide. Come back to this one when you need it.
+3. We aim to give you a gentle start with Bokeh and I am going to include more example code than usual in the follwing.
+
+
+
+
+```python
+from bokeh.plotting import figure, output_file, show
+
+output_file("output.html")
+
+p = figure()
+p.line(x=[1, 2, 3], y=[4,6,2])
+
+show(p)
+```
+
+
+```python
+from bokeh.plotting import figure, output_file, show
+
+# create a figure object
+p = figure(width=300, height=300, tools="pan,reset,save")
+
+# add a Circle renderer to this figure
+p.circle([1, 2.5, 3, 2], [2, 3, 1, 1.5], radius=0.3, alpha=0.5)
+
+# specify how to output the plot(s)
+output_file("foo.html")
+
+# display the figure
+show(p)
+```
+
+
+```python
+from bokeh.plotting import figure, show
+
+p = figure(width=400, height=400)
+
+# add a square renderer with a size, color, and alpha
+p.diamond_dot([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], size=20, color="olive", alpha=0.5)
+
+# show the results
+show(p)
+```
+
+
+```python
+import pandas as pd 
+df = pd.read_csv("../../../datasat.csv")
+df['Date'] = pd.to_datetime(df['Date'])
+# slice the dataframe to get data between 2010 and 2017
+df = df[(df['Date'].dt.year >= 2010) & (df['Date'].dt.year <= 2017)]
+focuscrimes = set(['WEAPON LAWS', 'PROSTITUTION', 'DRIVING UNDER THE INFLUENCE', 'ROBBERY', 'BURGLARY', 'ASSAULT', 'DRUNKENNESS', 'DRUG/NARCOTIC', 'TRESPASS', 'LARCENY/THEFT', 'VANDALISM', 'VEHICLE THEFT', 'STOLEN PROPERTY', 'DISORDERLY CONDUCT'])
+df = df[df['Category'].isin(focuscrimes)]
+
+```
+
+#### Data prep
+1. Take the data for the period of 2010-2017 and group it by hour-of-the-day.
+
+
+
+```python
+df['HourOfDay'] = df['Time'].str.strip().str[0:2]
+
+```
+
+
+```python
+# group the dataframe by "Category" and "HourOfDay", then calculate the count for each group
+crime_hourly_counts = df.groupby(['Category', 'HourOfDay']).size().reset_index(name='count')
+
+# calculate the total count for each crime category
+crime_category_counts = df.groupby(['Category']).size().reset_index(name='total_count')
+
+# merge the two dataframes to get the total count for each row
+crime_hourly_counts = pd.merge(crime_hourly_counts, crime_category_counts, on='Category')
+
+# calculate the hourly percentage of each crime type
+crime_hourly_counts['hourly_percentage'] = crime_hourly_counts['count'] / crime_hourly_counts['total_count']
+
+
+columns = ['Category', 'HourOfDay', 'hourly_percentage']
+focusData =  pd.DataFrame(crime_hourly_counts, columns=columns)
+print(focusData)
+```
+
+            Category HourOfDay  hourly_percentage
+    0        ASSAULT        00           0.055468
+    1        ASSAULT        01           0.049745
+    2        ASSAULT        02           0.044837
+    3        ASSAULT        03           0.023267
+    4        ASSAULT        04           0.014025
+    ..           ...       ...                ...
+    331  WEAPON LAWS        19           0.065000
+    332  WEAPON LAWS        20           0.054413
+    333  WEAPON LAWS        21           0.052851
+    334  WEAPON LAWS        22           0.062918
+    335  WEAPON LAWS        23           0.054760
+    
+    [336 rows x 3 columns]
+    
+
+
+```python
+# Pivot the dataframe
+pivoted_focusData = focusData.pivot_table(index='HourOfDay', columns='Category', values='hourly_percentage')
+
+# Display the pivoted dataframe
+print(pivoted_focusData)
+
+```
+
+    Category    ASSAULT  BURGLARY  DISORDERLY CONDUCT  \
+    HourOfDay                                           
+    00         0.055468  0.040191            0.052282   
+    01         0.049745  0.027653            0.038354   
+    02         0.044837  0.031432            0.032569   
+    03         0.023267  0.032765            0.018642   
+    04         0.014025  0.029379            0.014999   
+    05         0.011857  0.025644            0.060210   
+    06         0.015573  0.022892            0.119777   
+    07         0.022212  0.032284            0.101564   
+    08         0.033324  0.048688            0.074566   
+    09         0.035732  0.044997            0.053139   
+    10         0.040480  0.041786            0.040926   
+    11         0.042750  0.039973            0.036212   
+    12         0.053690  0.051462            0.030641   
+    13         0.046454  0.033660            0.039854   
+    14         0.046810  0.037898            0.028498   
+    15         0.052371  0.043686            0.031069   
+    16         0.052371  0.050698            0.027427   
+    17         0.053232  0.065508            0.025712   
+    18         0.051626  0.066796            0.032783   
+    19         0.052177  0.053275            0.024641   
+    20         0.051167  0.047640            0.022284   
+    21         0.052589  0.046286            0.022284   
+    22         0.049837  0.043992            0.035355   
+    23         0.048404  0.041415            0.036212   
+    
+    Category   DRIVING UNDER THE INFLUENCE  DRUG/NARCOTIC  DRUNKENNESS  \
+    HourOfDay                                                            
+    00                            0.121869       0.035064     0.080276   
+    01                            0.114539       0.020654     0.077235   
+    02                            0.098656       0.016746     0.070140   
+    03                            0.047954       0.012489     0.027367   
+    04                            0.017410       0.009279     0.014393   
+    05                            0.010690       0.005284     0.005068   
+    06                            0.012523       0.010982     0.009122   
+    07                            0.008552       0.024759     0.020069   
+    08                            0.008247       0.032400     0.017231   
+    09                            0.013134       0.038252     0.021488   
+    10                            0.004887       0.038797     0.022299   
+    11                            0.008858       0.044845     0.031826   
+    12                            0.010079       0.052050     0.029191   
+    13                            0.011912       0.060827     0.029597   
+    14                            0.013134       0.060652     0.033043   
+    15                            0.019243       0.069538     0.040138   
+    16                            0.031155       0.078599     0.044395   
+    17                            0.035736       0.083643     0.047638   
+    18                            0.036958       0.072639     0.053923   
+    19                            0.042761       0.061351     0.050071   
+    20                            0.057728       0.045959     0.060815   
+    21                            0.066280       0.038972     0.062639   
+    22                            0.092853       0.045653     0.075613   
+    23                            0.114844       0.040566     0.076424   
+    
+    Category   LARCENY/THEFT  PROSTITUTION   ROBBERY  STOLEN PROPERTY  TRESPASS  \
+    HourOfDay                                                                     
+    00              0.039479      0.129656  0.056201         0.044247  0.027969   
+    01              0.025431      0.095748  0.060538         0.033786  0.021191   
+    02              0.015607      0.060436  0.061111         0.029686  0.025391   
+    03              0.009971      0.036367  0.037957         0.023325  0.021382   
+    04              0.006543      0.019501  0.023943         0.020356  0.015559   
+    05              0.006631      0.010190  0.019642         0.016398  0.038851   
+    06              0.010058      0.008433  0.017849         0.017246  0.075601   
+    07              0.015137      0.005095  0.016559         0.024314  0.074360   
+    08              0.025859      0.004919  0.019749         0.027990  0.064147   
+    09              0.031942      0.002811  0.022330         0.031807  0.056510   
+    10              0.041112      0.005622  0.025842         0.035482  0.050783   
+    11              0.046137      0.011947  0.029713         0.042692  0.048587   
+    12              0.056196      0.037597  0.035484         0.051597  0.051355   
+    13              0.050278      0.014230  0.037097         0.054990  0.049160   
+    14              0.051816      0.023893  0.038996         0.057252  0.041333   
+    15              0.055465      0.022663  0.041219         0.056545  0.046296   
+    16              0.058496      0.023542  0.046703         0.063048  0.042574   
+    17              0.066967      0.025650  0.046989         0.064885  0.043242   
+    18              0.082894      0.041110  0.050394         0.065875  0.040760   
+    19              0.078589      0.078180  0.053369         0.055131  0.036273   
+    20              0.069092      0.065004  0.059283         0.050184  0.034842   
+    21              0.056487      0.052881  0.069140         0.047074  0.033792   
+    22              0.053348      0.095748  0.066237         0.045802  0.030260   
+    23              0.046464      0.128777  0.063656         0.040288  0.029782   
+    
+    Category   VANDALISM  VEHICLE THEFT  WEAPON LAWS  
+    HourOfDay                                         
+    00          0.054945       0.035913     0.054413  
+    01          0.038576       0.024113     0.039486  
+    02          0.035994       0.018234     0.032891  
+    03          0.026022       0.011841     0.022737  
+    04          0.017797       0.010011     0.016662  
+    05          0.014670       0.009991     0.007377  
+    06          0.017059       0.015274     0.011542  
+    07          0.021645       0.022757     0.021609  
+    08          0.031377       0.032932     0.024212  
+    09          0.029629       0.033159     0.031849  
+    10          0.031681       0.031350     0.031329  
+    11          0.029725       0.028163     0.033845  
+    12          0.039297       0.042779     0.045561  
+    13          0.031329       0.029849     0.046689  
+    14          0.034968       0.035379     0.043825  
+    15          0.041478       0.042903     0.054413  
+    16          0.045502       0.052606     0.061789  
+    17          0.060108       0.069175     0.061963  
+    18          0.073335       0.083523     0.067864  
+    19          0.068125       0.074108     0.065000  
+    20          0.065511       0.080214     0.054413  
+    21          0.065575       0.072649     0.052851  
+    22          0.065431       0.078775     0.062918  
+    23          0.060220       0.064303     0.054760  
+    
+
+1. First, let's convert our Pandas Dataframe to Bokeh ColumnDataSource:
+
+
+```python
+from bokeh.models import ColumnDataSource,Legend
+from bokeh.io import output_notebook, show
+from bokeh.palettes import Category10
+import seaborn as sns
+
+source = ColumnDataSource(data=pivoted_focusData)
+## it is a standard way to convert your df to bokeh
+output_notebook()
+
+```
+
+
+<style>
+        .bk-notebook-logo {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAOkSURBVDiNjZRtaJVlGMd/1/08zzln5zjP1LWcU9N0NkN8m2CYjpgQYQXqSs0I84OLIC0hkEKoPtiH3gmKoiJDU7QpLgoLjLIQCpEsNJ1vqUOdO7ppbuec5+V+rj4ctwzd8IIbbi6u+8f1539dt3A78eXC7QizUF7gyV1fD1Yqg4JWz84yffhm0qkFqBogB9rM8tZdtwVsPUhWhGcFJngGeWrPzHm5oaMmkfEg1usvLFyc8jLRqDOMru7AyC8saQr7GG7f5fvDeH7Ej8CM66nIF+8yngt6HWaKh7k49Soy9nXurCi1o3qUbS3zWfrYeQDTB/Qj6kX6Ybhw4B+bOYoLKCC9H3Nu/leUTZ1JdRWkkn2ldcCamzrcf47KKXdAJllSlxAOkRgyHsGC/zRday5Qld9DyoM4/q/rUoy/CXh3jzOu3bHUVZeU+DEn8FInkPBFlu3+nW3Nw0mk6vCDiWg8CeJaxEwuHS3+z5RgY+YBR6V1Z1nxSOfoaPa4LASWxxdNp+VWTk7+4vzaou8v8PN+xo+KY2xsw6une2frhw05CTYOmQvsEhjhWjn0bmXPjpE1+kplmmkP3suftwTubK9Vq22qKmrBhpY4jvd5afdRA3wGjFAgcnTK2s4hY0/GPNIb0nErGMCRxWOOX64Z8RAC4oCXdklmEvcL8o0BfkNK4lUg9HTl+oPlQxdNo3Mg4Nv175e/1LDGzZen30MEjRUtmXSfiTVu1kK8W4txyV6BMKlbgk3lMwYCiusNy9fVfvvwMxv8Ynl6vxoByANLTWplvuj/nF9m2+PDtt1eiHPBr1oIfhCChQMBw6Aw0UulqTKZdfVvfG7VcfIqLG9bcldL/+pdWTLxLUy8Qq38heUIjh4XlzZxzQm19lLFlr8vdQ97rjZVOLf8nclzckbcD4wxXMidpX30sFd37Fv/GtwwhzhxGVAprjbg0gCAEeIgwCZyTV2Z1REEW8O4py0wsjeloKoMr6iCY6dP92H6Vw/oTyICIthibxjm/DfN9lVz8IqtqKYLUXfoKVMVQVVJOElGjrnnUt9T9wbgp8AyYKaGlqingHZU/uG2NTZSVqwHQTWkx9hxjkpWDaCg6Ckj5qebgBVbT3V3NNXMSiWSDdGV3hrtzla7J+duwPOToIg42ChPQOQjspnSlp1V+Gjdged7+8UN5CRAV7a5EdFNwCjEaBR27b3W890TE7g24NAP/mMDXRWrGoFPQI9ls/MWO2dWFAar/xcOIImbbpA3zgAAAABJRU5ErkJggg==);
+        }
+    </style>
+    <div>
+        <a href="https://bokeh.org" target="_blank" class="bk-notebook-logo"></a>
+        <span id="p1271721">Loading BokehJS ...</span>
+    </div>
+
+
+
+
+
+2. We also need to create an empty figure (we will add our stuff here later on). Mini sub-exercise: Find the a guide how to define a figure in Bokeh online. Here is a little help:
+
+
+```python
+# Define a figure with title and axis labels
+p = figure(x_range=source.data['HourOfDay'], title="Hourly Percentage by Category",x_axis_label='Hour of the Day',width =1200)
+colo = sns.color_palette('viridis', len(source.data['HourOfDay'])).as_hex()
+```
+
+3. Now we are going to add the bars. In order to do so, we will use vbar (see the guide for help):
+
+
+```python
+bar ={} # to store vbars
+items=[]
+
+
+### here we will do a for loop:
+for indx,category  in enumerate(pivoted_focusData.columns):
+    bar[category] =p.vbar(x='HourOfDay', 
+    top=category ,
+    source=source,
+    muted=True, 
+    muted_alpha=0.05,
+    fill_alpha=1.9,
+    color=colo[indx],
+    width=0.7)
+    items.append((category, [bar[category]]))
+
+```
+
+4. The last thing to do is to make your legend interactive and display the figure:
+
+
+
+```python
+legend = Legend(items=items)
+p.add_layout(legend, 'left') 
+p.legend.click_policy="mute" 
+#test
+### assigns the click policy (you can try to use ''hide'
+show(p)
+#displays your plot
+```
+
+
+
+<div id="f2d2d16f-af64-4bcf-8ed7-82590c839e58" data-root-id="p1722045" style="display: contents;"></div>
+
+
+
+
