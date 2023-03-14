@@ -1,5 +1,5 @@
-.post-content {
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-  }
+.container {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
