@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: "../_layouts/layout.html"
 title: "My Notebook Post Bokeh"
 ---
 <div>
