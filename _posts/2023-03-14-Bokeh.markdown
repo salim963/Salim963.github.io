@@ -1,8 +1,6 @@
-
 ---
 layout: post
-title: "My Notebook Post"
-categories: [jupyter]
-tags: [ipynb]
+title: "My Notebook Post Bokeh"
 ---
 
+{% include mynotebook.html %}
