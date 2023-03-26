@@ -21,7 +21,7 @@
 title: Hello everyone, Welcome this is Salim 
 email: s193472@dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome on bord...
+  Welcome on board...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
