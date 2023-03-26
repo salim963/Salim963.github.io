@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: "My Notebook Post Bokeh"
+title: "Assignment 2"
 ---
 <div>
 {% include assigment2.html %}
