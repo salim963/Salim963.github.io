@@ -61,11 +61,13 @@ body{
 .body-image {
     flex: 1;
     text-align: right;
+
 }
 
 .body-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 50px;
 }
 
 .bread-text{
