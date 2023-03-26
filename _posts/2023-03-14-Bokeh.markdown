@@ -1,9 +1,8 @@
 ---
+layout: layout
 title: "My Notebook Post Bokeh"
 ---
-<head>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-</head>
+
 
 <div>
 {% include week6.html %}
