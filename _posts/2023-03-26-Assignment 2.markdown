@@ -1,5 +1,5 @@
 ---
-title: "My Notebook Post Bokeh"
+title: "Assigment 2"
 ---
  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 <div>
