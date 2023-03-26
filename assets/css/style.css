@@ -8,7 +8,7 @@ body{
 
 
 .header {
-    background-image: url('../img/Header.jpeg');
+    background-image: url("{{ site.baseurl }}/assets/img/Header.jpeg");
     background-size: cover;
     background-position: center;
     height: 800px; /* adjust height as needed */
