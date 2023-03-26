@@ -5,7 +5,7 @@ title: "Assignment 2"
 <head>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
-<div>
+
 <html lang="en">
 
 <header class="header">
@@ -28,21 +28,22 @@ title: "Assignment 2"
         <p>
 
             San Francisco is a city in California, with a population of 881,363 people
-<a href="https://www.city-data.com/city/San-Francisco-California.html">[1]</a>
-            that is 100% urbanized. First we needed to find a suitable dataset that, could was big enough and contained
-            the information we needed to answer our questions.<br>
 
-            <br>Many of us who have decided to buy our own property have thought about the type of life we want to lead.
+<a href="https://www.city-data.com/city/San-Francisco-California.html">[1]</a>
+that is 100% urbanized. First we needed to find a suitable dataset that, could was big enough and contained
+the information we needed to answer our questions.<br>
+
+<br>Many of us who have decided to buy our own property have thought about the type of life we want to lead.
             It is important to remember that the location of your home can affect your well-being and comfort. Living in the city
-            can offer a lot of stores, cafes, and entertainment, but can also be met with noise and hustle and bustle. 
+            can offer a lot of stores, cafes, and entertainment, but can also be met with noise and hustle and bustle.
+
 <br>
             <br>If you live in the city, you can explore nearby neighborhoods and areas, learn more about your neighbors, and look out for attractions.
             It can be helpful to know how often drunk driving incidents occur in the area if you live near a bar. For example,
             should you be particularly worried if you live near a bar in San Francisco? Is there an increased risk of encountering someone driving
             while intoxicated in areas where drunk driving reports have already increased?
-
-
 </div>
+
 <div class="body-image">
 <img alt="Districts Image" src="{{ site.baseurl }}/assets/img/Districts.png">
     </div>
@@ -93,6 +94,7 @@ title: "Assignment 2"
     <br>In addition, the presence of police patrols on the streets can have a significant impact on the number of DUI incidents and reports of binge drinking. In some areas where high-risk establishments are located, additional police patrols may be installed, which may reduce the likelihood of DUI incidents.<br>
 
     <br>Examining the map, you may also notice that some areas have higher population densities, which may contribute to more drunk driving incidents and reports of binge drinking. It should also be noted that the availability of public transportation in some areas may reduce drunk driving because people can use alternative modes of transportation to get home.<br>
+
 </p>
 <iframe src="{{ site.baseurl }}/assets/map.html" width="100%" height="600"></iframe>
 <p id="chart 3">
@@ -115,10 +117,9 @@ title: "Assignment 2"
 
 <footer class="footer">
     <div class="footer-content">
-        <a href="https://github.com/salim963/Assigment_2_data_ana"><img src="Github.png" alt="GitHub Icon"></a>
+        <a href="https://github.com/salim963/Assigment_2_data_ana"><img src="{{ site.baseurl }}/assets/img/Github.png" alt="GitHub Icon"></a>
         <p class="footer-text">This site has been created as part of the course Social data analysis and visualization (02806) offered by the Technical University of Denmark.</p>
     </div>
 </footer>
 
 </html>
-</div>
