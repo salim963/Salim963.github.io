@@ -228,3 +228,11 @@ hr {
 margin-bottom: 5%;
 
 }
+
+.imagehourly{
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    margin-right: 10%;
+
+}
