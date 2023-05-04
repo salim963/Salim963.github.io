@@ -149,18 +149,30 @@ body{
     width: 95%;
     height: 600px;
     background-color: #f0ebe3 ;
-
+    margin-left: 10%;
+    margin-right: 10%;
     margin: 0 auto;
 }
 
+.map{
+    background-color: #f0ebe3 ;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: 0 auto;
+}
 
+.plot-for-neighborhood{
+    background-color: #f0ebe3 ;
+    margin-left: 5%;
+    margin-right: 5%;
 
+}
 .references {
     padding-top: 50px;
 }
 
 .footer {
-    background-color: #f7e6c8;
+    background-color: #ede7dd;
     padding: 20px;
     border-radius: 10%;
 }

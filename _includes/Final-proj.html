@@ -11,6 +11,7 @@
 
 
 <body>
+    <div>
     <div class="deep-look">
         <h1>A deeper look into fire incidents in San Francisco</h1>
         <hr class="hr1">
@@ -170,38 +171,119 @@
         </p>
         </div>
         <iframe src="{{ site.baseurl }}/assets/Plots_and_diagrams_for_final/bokeh_Situation_pr_neighborhood.html" class="bokeh"></iframe>
+    </div>
+
 
         <hr class="hr1">
 
 
 
-
-        <p id="chart 2">
-
-        <h3> Which area in San Francisco has the highest number of DUI incidents and drunkenness reports?</h3>
-        Understanding the distribution of fire calls in San Francisco is crucial to ensuring the safety of its residents. To gain a deeper understanding of the fire call situation, we created a map that shows the distribution of four different types of fire calls in the city: Outside rubbish fire, False alarm/call, Cooking fire, and Building fire. These four types of calls were chosen as they are among the top 10 calls that SF Fire Department responds to.
-
-The map is based on data collected during the month of December 2022. This decision was made to provide a clear and concise representation of the data while minimizing the amount of information to process.
-
-The map shows all the fire stations in the city, and color-coded markers that represent the four types of fire calls. The different neighborhoods in San Francisco are also marked on the map. This allows us to visualize where each type of fire call is most common, and identify potential areas that need more attention in terms of fire prevention.
-
-By analyzing the distribution of the different types of fire calls, this information can help us develop targeted strategies for fire prevention and emergency response, and ultimately make the city a safer place for all residents
-        </p>
-        </div>
-
+    <div class="bread-text">
         
-        <iframe src="{{ site.baseurl }}/assets/map.html" width="100%" height="600"></iframe>
+        <div class="bread-text2">
+        <h3> what about the distribution of calls situation in the different neighborhood?</h3>
+        <p id="chart 2">
+            Understanding the distribution of fire calls in San Francisco is crucial 
+            to ensuring the safety of its residents.<br><br>
+            To gain a deeper understanding of the fire call situation, we created a map that shows the distribution of 
+            four different types of fire calls in the city:False alarm/call, Outside rubbish fire,
+            Cooking fire, and Building fire.<br><br>
+            I selected four different types of fire calls,
+            to better understand the distribution of fire incidents across San Francisco neighborhoods.
+            Three of these types are actual fire incidents, while one is a false alarm. Interestingly,
+            despite being a false alarm, it had the highest count among.<br>
+            The map is based on data collected during the month of December 2022. This decision was made to provide
+            a clear and concise representation of the data while minimizing the amount of information to process.<br><br>
+            The map shows all the fire stations in the city, and color-coded markers that represent the
+            four types of fire calls. The different neighborhoods in San Francisco are also marked on the map. 
+            This allows us to visualize where each type of fire call is most common, and identify potential areas
+            that need more attention in terms of fire prevention.
+            <br><br>
+            By analyzing the distribution of the different types of fire calls,
+            this information can help us develop targeted strategies for fire prevention and emergency response,
+            and ultimately make the city a safer place for all residents.
+            <br><br><br>
+            By hovering over the map's different neighborhoods, their names will appear.
+            Similarly, to the four different types of calls. 
+            The green points on the map indicate the location of fire stations in the area,
+            and clicking on them will bring up more information about the station.
+        </p>
+        </div> 
+        <iframe class="map" src="{{ site.baseurl }}/assets/Plots_and_diagrams_for_final/Situation_map.html" width="90%" height="700"></iframe>
         <p id="chart 3">
+    </div> 
+
+    <hr class="hr1">
+
+    <div class="body-content">
+        <div class="body-text22"> 
+            <h3 style="text-align: center;">Fire battalions in San Francisco</h3>
+            <p class="p-text22">
+            In addition to identifying the most common types of fire
+            calls in San Francisco, it's also important to consider
+            how quickly the fire department is able to respond to these emergencies.<br><br>
+            That's why we've created a plot that shows the average response time for
+            four different types of calls in various neighborhoods throughout the city.
+            <br><br>
+            The four types of calls we're
+            focusing on are Outside Rubbish Fire,
+            False Alarm/Call, Cooking Fire, and 'Building Fire.
+            By analyzing the response times for these calls,
+            we can get a better understanding of how well-equipped
+            the fire department is to handle different types of
+            emergencies in different neighborhoods.
+            <br><br>
+            As expected, the average response times vary
+            significantly depending on the type of call and the neighborhood in question. 
+            For example, the average response time in 12/2022
+            for Noe valley neighborhood is only 3 minutes and 25 seconds,
+            whereas the average response time for  Golden Gate Park neighborhood is 6 minutes and 40 seconds.
+            <br><br><br>
+            But what does delay at response times means?
+            <br><br>
+            Average response times are an important metric for
+            emergency services such as fire departments because
+            they directly impact the outcomes of emergency incidents.
+            In the case of fires, every minute of delay in response time
+            can mean the difference between life and death, as well as significant property damage.
+            <br><br>
+            For example, a delay of just a few minutes can cause a small
+            fire to grow into a large blaze, making it more difficult and
+            dangerous for firefighters to contain. In addition, every minute spent
+            responding to a false alarm or non-emergency incident is time taken away 
+            from potentially life-saving emergencies.
+            <br><br>
+            By comparing the response times across different neighborhoods,
+            we can identify areas where the fire department may need to allocate
+            more resources or adjust their response strategies. Additionally,
+            we can use this data to better understand the relationship between
+            call type, neighborhood, and response time.
+            <br><br>
+            This plot works hand in hand with the map we previously created,
+            which shows the distribution of these call types across different
+            neighborhoods in San Francisco. By combining these two visualizations,
+            we can gain a more comprehensive understanding of how the fire department
+            is handling emergencies throughout the city.
+            <br>
+            For example we can conclude from the map and the plot the there
+            is a need for fire station in Golden Gate Park especially at the
+            corner for the border between Inner Richmond and Haight Ashbury.
+
+            </p>
+        </div>
+            <div class="plot-for-neighborhood">
+            <iframe  src="{{ site.baseurl }}/assets/Plots_and_diagrams_for_final/plot_for_neighborhood.html" width="900" height="700">
+            </div>
+    </div>
+
+    <hr class="hr1">
+
+    
 
 
-        <p>
-        <h3>References:</h3>
-        <hr>
-        <p><a href="https://www.city-data.com/city/San-Francisco-California.html">[1] San Francisco population</a></p>
-        <p><a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783">[2]
-San Francisco Police Department (SFPD) data</a></p>
-
+</div>
 </body>
+
 
 <footer class="footer">
     <div class="footer-content">
