@@ -1,9 +1,27 @@
 <html lang="en">
 
-<header class="header" style="background-image: url(https://risingnepaldaily.com/storage/media/15799/Untitled-3.gif);">
+<nav>
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li class="dropdown">
+            <a>Plots & Charts</a>
+            <div class="dropdown-content">
+                <a href="#top-10-calls">Top 10 Call Situations in 2022</a>
+                <a href="#distribution-calls">Distribution of Calls Situations in Different Neighborhoods</a>
+                <a href="#busiest-fire-departments">When Are Fire Departments the Busiest?</a>
+                <a href="#arrival-time">Average response time for each neighborhood in 2022</a>
+            </div>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#explainer-notebook">Explainer Notebook</a></li>
+    </ul>
+</nav>
+
+<header class="header" style="background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2020-09/9/15/asset/d5a34da150f9/sub-buzz-1904-1599665551-13.jpg?downsize=1600:*&output-format=auto&output-quality=auto);">
         <div class="header-content">
         <h1 class="header-title">What Can Data Tell Us About Fire Incidents in San Francisco?</h1>
-        <p class="header-subtitle">Let us find out via data analysis !</p>
+        <p class="header-subtitle">Let us via data analysis take a deeper look into Alarm types, response time and other things from the neighborhoods of San Francisco</p>
     </div>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/final-proj-style.css">
 
@@ -11,21 +29,11 @@
 
 
 <body>
-    <div>
-    <div class="deep-look">
-        <h1>A deeper look into fire incidents in San Francisco</h1>
-        <hr class="hr1">
-    </div>
-
-    <div class="Headline">
-        <h1>Introduction:</h1>
-    </div>
-
-
-
+<section id="introduction">
     <div class="body-content">
-        <div class="body-text">
-            <p class="p-text">
+        <div>
+        <h1>Introduction</h1>
+            <p>
                 Welcome to our article that delves
                 into the world of fire incidents in San Francisco.
                 Our publication provides insightful analysis, 
@@ -33,7 +41,7 @@
                 readers understand the causes, impacts, and responses 
                 to fires that occur in the city. We have gathered and
                 analyzed data on fire incidents, fire safety, and the fire department's 
-                response, to bring you an in-depth look at the challenges faced by the San
+                response time, to bring you an in-depth look at the challenges faced by the San
                 Francisco Fire Department in its mission to keep the city safe. 
                 Join us as we explore the history of fires in San Francisco,
                 the people and communities affected by them, and the innovative
@@ -65,23 +73,22 @@
                 of fires and minimize their impact on the community.
             </p>
         </div>
-        <div class="body-image">
+        <div class="introduction_image">
             <img src="https://sacavoyage.fr/wp-content/uploads/SAN-FRANCISCO-downtown.jpg">
         </div>
-        
-
     </div>
+    </section>
 
+    <section id="motivation">
+        <div class="wrapper">
+        <div class="body-content">
+            <iframe class="youtube" src="https://www.youtube.com/embed/QZVr16J_4Nw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+            <h1>Motivation</h1>
 
-    <hr class="hr1">
-
-
-
-
-        <div class="bread-text2">
-            <h2>Searching for facts to answer these questions, We found a dataset on fire incident in San Francisco.</h2>
+            <h4>Searching for facts to answer these questions, We found a dataset on fire incident in San Francisco.</h4>
     
-            <p class="p-text">
+            <p>
             <br>Fire departments are an essential service in every community,
             tasked with responding to various emergency situations, including fires,
             medical emergencies, and natural disasters. The role of the fire department
@@ -100,17 +107,20 @@
             emergencies, and Alarms calls , and how they were distributed across various neighborhoods in the city.
             By mapping these incidents, we were able to identify hotspots in the city
             where emergencies were most frequent, and how each neighborhood's emergency response needs differed.
+
             </p>
+            </div>
         </div>
-        <hr class="hr1">
+        </div>
+    </section>
 
+<section id="fire-battalions">
+    <div>
+        <div class="body-content">
+            <div>
+                <h2>Fire battalions in San Francisco</h2>
+            <p>
 
-
-
-    <div class="body-content">
-        <div class="body-text22"> 
-            <h3 style="text-align: center;">Fire battalions in San Francisco</h3>
-            <p class="p-text22">
                 Battalions are geographic regions within the San 
                 Francisco Fire Department's coverage area. 
                 Each Battalion have many fire stations is responsible
@@ -136,18 +146,20 @@
                 to prevent emergencies from occurring in the first place.
             </p>
         </div>
-            <div class="image-div">
-                <img  src="{{ site.baseurl }}/assets/img/Battalions.png" >
-            </div>
-    </div>
 
-<hr class="hr1">
-    
-        
-    <div class="bread-text">
-        <div class="bread-text2">
-            <h3>Top 10 call situations in 2022</h3>
-        <p class="Chart-1">
+            <div>
+                <img class="battalion_plot" src="{{ site.baseurl }}/assets/img/Battalions.png" >
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="top-10-calls">
+    <div class="wrapper">
+        <div class="big_plots">
+        <div>
+            <h2>Top 10 call situations in 2022</h2>
+        <p>
             To better understand the distribution of call situations in San Francisco,
             we have created a bokeh plot that displays the top 10 call situations that
             occurred in the city in 2022. The plot shows the number of incidents for
@@ -172,18 +184,15 @@
         </p>
         </div>
         <iframe src="{{ site.baseurl }}/assets/Plots_and_diagrams_for_final/bokeh_Situation_pr_neighborhood.html" class="bokeh"></iframe>
+        </div>
     </div>
+</section>
 
+<section id="distribution-calls">
+    <div class="big_plots">
 
-        <hr class="hr1">
-
-
-
-    <div class="bread-text">
-        
-        <div class="bread-text2">
-        <h3> what about the distribution of calls situation in the different neighborhood?</h3>
-        <p id="chart 2">
+        <h2> what about the distribution of calls situation in the different neighborhood?</h2>
+        <p>
             Understanding the distribution of fire calls in San Francisco is crucial 
             to ensuring the safety of its residents.<br><br>
             To gain a deeper understanding of the fire call situation, we created a map that shows the distribution of 
@@ -209,17 +218,17 @@
             The green points on the map indicate the location of fire stations in the area,
             and clicking on them will bring up more information about the station.
         </p>
-        </div> 
         <iframe class="map" src="{{ site.baseurl }}/assets/Plots_and_diagrams_for_final/Situation_map.html" width="90%" height="700"></iframe>
         <p id="chart 3">
-    </div> 
+    </div>
+</section>
 
-    <hr class="hr1">
-
+<section id="arrival-time">
+<div class="wrapper">
     <div class="body-content">
-        <div class="body-text22"> 
-            <h3 style="text-align: center;">Fire battalions in San Francisco</h3>
-            <p class="p-text22">
+        <div>
+            <h2>Average arrival time for each neighborhood in 2022</h2>
+            <p>
             In addition to identifying the most common types of fire
             calls in San Francisco, it's also important to consider
             how quickly the fire department is able to respond to these emergencies.<br><br>
@@ -272,18 +281,18 @@
 
             </p>
         </div>
-            <div class="plot-for-neighborhood">
-            <iframe  src="{{ site.baseurl }}/assets/Plots_and_diagrams_for_final/plot_for_neighborhood.html" width="900" height="700"></iframe>
+            <div>
+            <iframe class="plot-for-neighborhood"src="{{ site.baseurl }}/assets/Plots_and_diagrams_for_final/plot_for_neighborhood.html"></iframe>
             </div>
     </div>
+</div>
+</section>
 
-    <hr class="hr1">
-
-    
-    <div class="body-content">
-        <div class="body-text22"> 
-            <h3 style="text-align: center;">When Are Fire Departments the Busiest?</h3>
-            <p class="p-text22">
+<section id="busiest-fire-departments">
+        <div class="body-content">
+            <div>
+                <h2>When Are Fire Departments the Busiest?</h2>
+            <p>
                 We have analyzed the hourly counts of fire incidents calls
                 received by the fire department. <br>The data clearly shows that
                 the majority of fire incidents occur during the day, with the 
@@ -298,13 +307,51 @@
                 resources and efforts during the busiest hours of the day.<br><br>
                 By doing so, they can better serve the community and ensure 
                 that they are able to respond to emergency calls as quickly as possible.
-        </p>
-        </div>
+            </p>
+                </div>
             <div class="imagehourly">
                 <img  src="{{ site.baseurl }}/assets/img/hourly-count.png" >
             </div>
-    </div>
+        </div>
+</section>
 
+        <div class="wrapper">
+            <div class="body-content">
+                <section id="conclusion">
+                <div class="conclusion">
+
+                <h1>Conlcusion</h1>
+
+                <p>
+                    We have analyzed the hourly counts of fire incidents calls
+                    received by the fire department. <br>The data clearly shows that
+                    the majority of fire incidents occur during the day, with the
+                    highest number of calls received between 9:00 to 21:00. Specifically,
+                    there is a peak in fire calls between 17:00 to 19:00, indicating that
+                    this is a particularly busy time for the fire department.<br><br>
+                    On the other hand, we can see that the lowest count of calls
+                    occurs between 3:00 to 6:00. This is likely due to the fact
+                    that people are sleeping during these hours, and there are
+                    fewer activities that could potentially cause fires.<br><br>
+                    Based on these observations, we can conclude that the fire department should focus their
+                    resources and efforts during the busiest hours of the day.<br><br>
+                    By doing so, they can better serve the community and ensure
+                    that they are able to respond to emergency calls as quickly as possible.
+                </p>
+                </div>
+                </section>
+                <section id="explainer-notebook">
+                <div class="explainer">
+                    <h1>Explainer Notebook</h1>
+
+                    <p>
+                    We provide the GitHub link to our explainer notebook for reference, which is accessible <a href="https://github.com/Strongside-87/Final_Project/blob/master/explainer/explainer_notebook.ipynb">here</a>.
+                    It is important to note that certain sections of the output have been redacted in this notebook to ensure compliance with GitHub's 100mb file size limit.
+                    </p>
+                </div>
+                </section>
+            </div>
+        </div>
 
 
 
