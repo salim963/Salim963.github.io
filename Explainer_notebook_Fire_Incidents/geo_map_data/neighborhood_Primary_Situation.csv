@@ -1,0 +1,381 @@
+,Primary Situation,neighborhood_district,count
+0,113 Cooking fire,Bayview Hunters Point,24
+1,113 Cooking fire,Bernal Heights,6
+2,113 Cooking fire,Castro/Upper Market,32
+3,113 Cooking fire,Chinatown,12
+4,113 Cooking fire,Excelsior,9
+5,113 Cooking fire,Financial District/South Beach,16
+6,113 Cooking fire,Glen Park,7
+7,113 Cooking fire,Golden Gate Park,2
+8,113 Cooking fire,Haight Ashbury,17
+9,113 Cooking fire,Hayes Valley,36
+10,113 Cooking fire,Inner Richmond,6
+11,113 Cooking fire,Inner Sunset,33
+12,113 Cooking fire,Japantown,6
+13,113 Cooking fire,Lakeshore,38
+14,113 Cooking fire,Lone Mountain/USF,6
+15,113 Cooking fire,Marina,10
+16,113 Cooking fire,McLaren Park,1
+17,113 Cooking fire,Mission,90
+18,113 Cooking fire,Mission Bay,13
+19,113 Cooking fire,Nob Hill,23
+20,113 Cooking fire,Noe Valley,16
+21,113 Cooking fire,North Beach,15
+22,113 Cooking fire,Oceanview/Merced/Ingleside,15
+23,113 Cooking fire,Outer Mission,6
+24,113 Cooking fire,Outer Richmond,21
+25,113 Cooking fire,Pacific Heights,10
+26,113 Cooking fire,Portola,4
+27,113 Cooking fire,Potrero Hill,12
+28,113 Cooking fire,Presidio Heights,7
+29,113 Cooking fire,Russian Hill,16
+30,113 Cooking fire,South of Market,95
+31,113 Cooking fire,Sunset/Parkside,22
+32,113 Cooking fire,Tenderloin,180
+33,113 Cooking fire,Twin Peaks,6
+34,113 Cooking fire,Visitacion Valley,5
+35,113 Cooking fire,West of Twin Peaks,16
+36,113 Cooking fire,Western Addition,52
+37,151 Outside rubbish,Bayview Hunters Point,221
+38,151 Outside rubbish,Bernal Heights,79
+39,151 Outside rubbish,Castro/Upper Market,53
+40,151 Outside rubbish,Chinatown,25
+41,151 Outside rubbish,Excelsior,6
+42,151 Outside rubbish,Financial District/South Beach,112
+43,151 Outside rubbish,Glen Park,3
+44,151 Outside rubbish,Golden Gate Park,29
+45,151 Outside rubbish,Haight Ashbury,8
+46,151 Outside rubbish,Hayes Valley,60
+47,151 Outside rubbish,Inner Richmond,13
+48,151 Outside rubbish,Inner Sunset,10
+49,151 Outside rubbish,Japantown,6
+50,151 Outside rubbish,Lakeshore,9
+51,151 Outside rubbish,Lincoln Park,1
+52,151 Outside rubbish,Lone Mountain/USF,9
+53,151 Outside rubbish,Marina,25
+54,151 Outside rubbish,Mission,292
+55,151 Outside rubbish,Mission Bay,19
+56,151 Outside rubbish,Nob Hill,85
+57,151 Outside rubbish,Noe Valley,6
+58,151 Outside rubbish,North Beach,21
+59,151 Outside rubbish,Oceanview/Merced/Ingleside,19
+60,151 Outside rubbish,Outer Mission,34
+61,151 Outside rubbish,Outer Richmond,13
+62,151 Outside rubbish,Pacific Heights,20
+63,151 Outside rubbish,Portola,22
+64,151 Outside rubbish,Potrero Hill,51
+65,151 Outside rubbish,Presidio Heights,13
+66,151 Outside rubbish,Russian Hill,28
+67,151 Outside rubbish,Seacliff,2
+68,151 Outside rubbish,South of Market,199
+69,151 Outside rubbish,Sunset/Parkside,29
+70,151 Outside rubbish,Tenderloin,286
+71,151 Outside rubbish,Twin Peaks,2
+72,151 Outside rubbish,Visitacion Valley,5
+73,151 Outside rubbish,West of Twin Peaks,11
+74,151 Outside rubbish,Western Addition,127
+75,311 Medical assist,Bayview Hunters Point,34
+76,311 Medical assist,Bernal Heights,17
+77,311 Medical assist,Castro/Upper Market,12
+78,311 Medical assist,Chinatown,7
+79,311 Medical assist,Excelsior,9
+80,311 Medical assist,Financial District/South Beach,32
+81,311 Medical assist,Glen Park,1
+82,311 Medical assist,Golden Gate Park,10
+83,311 Medical assist,Haight Ashbury,5
+84,311 Medical assist,Hayes Valley,15
+85,311 Medical assist,Inner Richmond,5
+86,311 Medical assist,Inner Sunset,10
+87,311 Medical assist,Japantown,5
+88,311 Medical assist,Lakeshore,5
+89,311 Medical assist,Lone Mountain/USF,9
+90,311 Medical assist,Marina,18
+91,311 Medical assist,McLaren Park,2
+92,311 Medical assist,Mission,69
+93,311 Medical assist,Mission Bay,12
+94,311 Medical assist,Nob Hill,9
+95,311 Medical assist,Noe Valley,3
+96,311 Medical assist,North Beach,13
+97,311 Medical assist,Oceanview/Merced/Ingleside,3
+98,311 Medical assist,Outer Mission,10
+99,311 Medical assist,Outer Richmond,10
+100,311 Medical assist,Pacific Heights,10
+101,311 Medical assist,Portola,14
+102,311 Medical assist,Potrero Hill,13
+103,311 Medical assist,Presidio,1
+104,311 Medical assist,Presidio Heights,6
+105,311 Medical assist,Russian Hill,9
+106,311 Medical assist,South of Market,77
+107,311 Medical assist,Sunset/Parkside,32
+108,311 Medical assist,Tenderloin,87
+109,311 Medical assist,Treasure Island,2
+110,311 Medical assist,Twin Peaks,2
+111,311 Medical assist,Visitacion Valley,10
+112,311 Medical assist,West of Twin Peaks,5
+113,311 Medical assist,Western Addition,30
+114,322 Motor vehicle accident with injuries,Bayview Hunters Point,94
+115,322 Motor vehicle accident with injuries,Bernal Heights,45
+116,322 Motor vehicle accident with injuries,Castro/Upper Market,28
+117,322 Motor vehicle accident with injuries,Chinatown,14
+118,322 Motor vehicle accident with injuries,Excelsior,34
+119,322 Motor vehicle accident with injuries,Financial District/South Beach,43
+120,322 Motor vehicle accident with injuries,Glen Park,5
+121,322 Motor vehicle accident with injuries,Golden Gate Park,50
+122,322 Motor vehicle accident with injuries,Haight Ashbury,13
+123,322 Motor vehicle accident with injuries,Hayes Valley,47
+124,322 Motor vehicle accident with injuries,Inner Richmond,16
+125,322 Motor vehicle accident with injuries,Inner Sunset,20
+126,322 Motor vehicle accident with injuries,Japantown,11
+127,322 Motor vehicle accident with injuries,Lakeshore,22
+128,322 Motor vehicle accident with injuries,Lone Mountain/USF,22
+129,322 Motor vehicle accident with injuries,Marina,26
+130,322 Motor vehicle accident with injuries,McLaren Park,4
+131,322 Motor vehicle accident with injuries,Mission,143
+132,322 Motor vehicle accident with injuries,Mission Bay,13
+133,322 Motor vehicle accident with injuries,Nob Hill,26
+134,322 Motor vehicle accident with injuries,Noe Valley,5
+135,322 Motor vehicle accident with injuries,North Beach,8
+136,322 Motor vehicle accident with injuries,Oceanview/Merced/Ingleside,26
+137,322 Motor vehicle accident with injuries,Outer Mission,60
+138,322 Motor vehicle accident with injuries,Outer Richmond,34
+139,322 Motor vehicle accident with injuries,Pacific Heights,17
+140,322 Motor vehicle accident with injuries,Portola,43
+141,322 Motor vehicle accident with injuries,Potrero Hill,40
+142,322 Motor vehicle accident with injuries,Presidio,4
+143,322 Motor vehicle accident with injuries,Presidio Heights,6
+144,322 Motor vehicle accident with injuries,Russian Hill,13
+145,322 Motor vehicle accident with injuries,South of Market,92
+146,322 Motor vehicle accident with injuries,Sunset/Parkside,59
+147,322 Motor vehicle accident with injuries,Tenderloin,47
+148,322 Motor vehicle accident with injuries,Treasure Island,11
+149,322 Motor vehicle accident with injuries,Twin Peaks,5
+150,322 Motor vehicle accident with injuries,Visitacion Valley,12
+151,322 Motor vehicle accident with injuries,West of Twin Peaks,35
+152,322 Motor vehicle accident with injuries,Western Addition,52
+153,324 Motor vehicle accident with no injuries.,Bayview Hunters Point,42
+154,324 Motor vehicle accident with no injuries.,Bernal Heights,25
+155,324 Motor vehicle accident with no injuries.,Castro/Upper Market,11
+156,324 Motor vehicle accident with no injuries.,Chinatown,3
+157,324 Motor vehicle accident with no injuries.,Excelsior,20
+158,324 Motor vehicle accident with no injuries.,Financial District/South Beach,18
+159,324 Motor vehicle accident with no injuries.,Glen Park,3
+160,324 Motor vehicle accident with no injuries.,Golden Gate Park,15
+161,324 Motor vehicle accident with no injuries.,Haight Ashbury,4
+162,324 Motor vehicle accident with no injuries.,Hayes Valley,20
+163,324 Motor vehicle accident with no injuries.,Inner Richmond,5
+164,324 Motor vehicle accident with no injuries.,Inner Sunset,12
+165,324 Motor vehicle accident with no injuries.,Japantown,2
+166,324 Motor vehicle accident with no injuries.,Lakeshore,14
+167,324 Motor vehicle accident with no injuries.,Lone Mountain/USF,9
+168,324 Motor vehicle accident with no injuries.,Marina,10
+169,324 Motor vehicle accident with no injuries.,McLaren Park,2
+170,324 Motor vehicle accident with no injuries.,Mission,57
+171,324 Motor vehicle accident with no injuries.,Mission Bay,9
+172,324 Motor vehicle accident with no injuries.,Nob Hill,11
+173,324 Motor vehicle accident with no injuries.,Noe Valley,11
+174,324 Motor vehicle accident with no injuries.,North Beach,10
+175,324 Motor vehicle accident with no injuries.,Oceanview/Merced/Ingleside,13
+176,324 Motor vehicle accident with no injuries.,Outer Mission,21
+177,324 Motor vehicle accident with no injuries.,Outer Richmond,22
+178,324 Motor vehicle accident with no injuries.,Pacific Heights,14
+179,324 Motor vehicle accident with no injuries.,Portola,24
+180,324 Motor vehicle accident with no injuries.,Potrero Hill,18
+181,324 Motor vehicle accident with no injuries.,Presidio,2
+182,324 Motor vehicle accident with no injuries.,Presidio Heights,3
+183,324 Motor vehicle accident with no injuries.,Russian Hill,8
+184,324 Motor vehicle accident with no injuries.,Seacliff,1
+185,324 Motor vehicle accident with no injuries.,South of Market,48
+186,324 Motor vehicle accident with no injuries.,Sunset/Parkside,35
+187,324 Motor vehicle accident with no injuries.,Tenderloin,19
+188,324 Motor vehicle accident with no injuries.,Treasure Island,5
+189,324 Motor vehicle accident with no injuries.,Twin Peaks,2
+190,324 Motor vehicle accident with no injuries.,Visitacion Valley,5
+191,324 Motor vehicle accident with no injuries.,West of Twin Peaks,20
+192,324 Motor vehicle accident with no injuries.,Western Addition,14
+193,500 Service Call,Bayview Hunters Point,71
+194,500 Service Call,Bernal Heights,20
+195,500 Service Call,Castro/Upper Market,86
+196,500 Service Call,Chinatown,18
+197,500 Service Call,Excelsior,46
+198,500 Service Call,Financial District/South Beach,67
+199,500 Service Call,Glen Park,9
+200,500 Service Call,Golden Gate Park,11
+201,500 Service Call,Haight Ashbury,26
+202,500 Service Call,Hayes Valley,37
+203,500 Service Call,Inner Richmond,10
+204,500 Service Call,Inner Sunset,33
+205,500 Service Call,Japantown,5
+206,500 Service Call,Lakeshore,8
+207,500 Service Call,Lincoln Park,3
+208,500 Service Call,Lone Mountain/USF,13
+209,500 Service Call,Marina,45
+210,500 Service Call,McLaren Park,8
+211,500 Service Call,Mission,120
+212,500 Service Call,Mission Bay,60
+213,500 Service Call,Nob Hill,40
+214,500 Service Call,Noe Valley,29
+215,500 Service Call,North Beach,22
+216,500 Service Call,Oceanview/Merced/Ingleside,20
+217,500 Service Call,Outer Mission,23
+218,500 Service Call,Outer Richmond,32
+219,500 Service Call,Pacific Heights,25
+220,500 Service Call,Portola,24
+221,500 Service Call,Potrero Hill,38
+222,500 Service Call,Presidio,3
+223,500 Service Call,Presidio Heights,15
+224,500 Service Call,Russian Hill,19
+225,500 Service Call,Seacliff,2
+226,500 Service Call,South of Market,80
+227,500 Service Call,Sunset/Parkside,57
+228,500 Service Call,Tenderloin,97
+229,500 Service Call,Treasure Island,12
+230,500 Service Call,Twin Peaks,10
+231,500 Service Call,Visitacion Valley,21
+232,500 Service Call,West of Twin Peaks,35
+233,500 Service Call,Western Addition,24
+234,700 False alarm or false call,Bayview Hunters Point,157
+235,700 False alarm or false call,Bernal Heights,48
+236,700 False alarm or false call,Castro/Upper Market,54
+237,700 False alarm or false call,Chinatown,118
+238,700 False alarm or false call,Excelsior,24
+239,700 False alarm or false call,Financial District/South Beach,324
+240,700 False alarm or false call,Glen Park,20
+241,700 False alarm or false call,Golden Gate Park,25
+242,700 False alarm or false call,Haight Ashbury,57
+243,700 False alarm or false call,Hayes Valley,72
+244,700 False alarm or false call,Inner Richmond,78
+245,700 False alarm or false call,Inner Sunset,60
+246,700 False alarm or false call,Japantown,16
+247,700 False alarm or false call,Lakeshore,39
+248,700 False alarm or false call,Lincoln Park,4
+249,700 False alarm or false call,Lone Mountain/USF,42
+250,700 False alarm or false call,Marina,72
+251,700 False alarm or false call,McLaren Park,9
+252,700 False alarm or false call,Mission,212
+253,700 False alarm or false call,Mission Bay,39
+254,700 False alarm or false call,Nob Hill,157
+255,700 False alarm or false call,Noe Valley,44
+256,700 False alarm or false call,North Beach,85
+257,700 False alarm or false call,Oceanview/Merced/Ingleside,31
+258,700 False alarm or false call,Outer Mission,39
+259,700 False alarm or false call,Outer Richmond,152
+260,700 False alarm or false call,Pacific Heights,93
+261,700 False alarm or false call,Portola,21
+262,700 False alarm or false call,Potrero Hill,74
+263,700 False alarm or false call,Presidio Heights,57
+264,700 False alarm or false call,Russian Hill,79
+265,700 False alarm or false call,Seacliff,12
+266,700 False alarm or false call,South of Market,145
+267,700 False alarm or false call,Sunset/Parkside,70
+268,700 False alarm or false call,Tenderloin,243
+269,700 False alarm or false call,Treasure Island,1
+270,700 False alarm or false call,Twin Peaks,14
+271,700 False alarm or false call,Visitacion Valley,27
+272,700 False alarm or false call,West of Twin Peaks,95
+273,700 False alarm or false call,Western Addition,107
+274,711 Municipal alarm system,Bayview Hunters Point,3
+275,711 Municipal alarm system,Bernal Heights,2
+276,711 Municipal alarm system,Castro/Upper Market,3
+277,711 Municipal alarm system,Chinatown,3
+278,711 Municipal alarm system,Excelsior,1
+279,711 Municipal alarm system,Financial District/South Beach,23
+280,711 Municipal alarm system,Golden Gate Park,28
+281,711 Municipal alarm system,Haight Ashbury,17
+282,711 Municipal alarm system,Hayes Valley,23
+283,711 Municipal alarm system,Inner Richmond,2
+284,711 Municipal alarm system,Inner Sunset,7
+285,711 Municipal alarm system,Japantown,1
+286,711 Municipal alarm system,Lakeshore,9
+287,711 Municipal alarm system,Lone Mountain/USF,3
+288,711 Municipal alarm system,Marina,2
+289,711 Municipal alarm system,Mission,15
+290,711 Municipal alarm system,Nob Hill,10
+291,711 Municipal alarm system,North Beach,5
+292,711 Municipal alarm system,Oceanview/Merced/Ingleside,2
+293,711 Municipal alarm system,Outer Richmond,1
+294,711 Municipal alarm system,Pacific Heights,12
+295,711 Municipal alarm system,Potrero Hill,2
+296,711 Municipal alarm system,Presidio Heights,3
+297,711 Municipal alarm system,South of Market,14
+298,711 Municipal alarm system,Sunset/Parkside,1
+299,711 Municipal alarm system,Tenderloin,56
+300,711 Municipal alarm system,Visitacion Valley,1
+301,711 Municipal alarm system,West of Twin Peaks,3
+302,711 Municipal alarm system,Western Addition,32
+303,743 Smoke detector activation,Bayview Hunters Point,57
+304,743 Smoke detector activation,Bernal Heights,22
+305,743 Smoke detector activation,Castro/Upper Market,30
+306,743 Smoke detector activation,Chinatown,36
+307,743 Smoke detector activation,Excelsior,12
+308,743 Smoke detector activation,Financial District/South Beach,104
+309,743 Smoke detector activation,Glen Park,16
+310,743 Smoke detector activation,Golden Gate Park,3
+311,743 Smoke detector activation,Haight Ashbury,38
+312,743 Smoke detector activation,Hayes Valley,51
+313,743 Smoke detector activation,Inner Richmond,14
+314,743 Smoke detector activation,Inner Sunset,31
+315,743 Smoke detector activation,Japantown,21
+316,743 Smoke detector activation,Lakeshore,66
+317,743 Smoke detector activation,Lone Mountain/USF,18
+318,743 Smoke detector activation,Marina,49
+319,743 Smoke detector activation,McLaren Park,4
+320,743 Smoke detector activation,Mission,147
+321,743 Smoke detector activation,Mission Bay,28
+322,743 Smoke detector activation,Nob Hill,63
+323,743 Smoke detector activation,Noe Valley,44
+324,743 Smoke detector activation,North Beach,16
+325,743 Smoke detector activation,Oceanview/Merced/Ingleside,20
+326,743 Smoke detector activation,Outer Mission,15
+327,743 Smoke detector activation,Outer Richmond,18
+328,743 Smoke detector activation,Pacific Heights,75
+329,743 Smoke detector activation,Portola,8
+330,743 Smoke detector activation,Potrero Hill,43
+331,743 Smoke detector activation,Presidio Heights,22
+332,743 Smoke detector activation,Russian Hill,30
+333,743 Smoke detector activation,Seacliff,3
+334,743 Smoke detector activation,South of Market,174
+335,743 Smoke detector activation,Sunset/Parkside,33
+336,743 Smoke detector activation,Tenderloin,262
+337,743 Smoke detector activation,Twin Peaks,21
+338,743 Smoke detector activation,Visitacion Valley,17
+339,743 Smoke detector activation,West of Twin Peaks,36
+340,743 Smoke detector activation,Western Addition,122
+341,745 Alarm system activation,Bayview Hunters Point,161
+342,745 Alarm system activation,Bernal Heights,25
+343,745 Alarm system activation,Castro/Upper Market,99
+344,745 Alarm system activation,Chinatown,96
+345,745 Alarm system activation,Excelsior,21
+346,745 Alarm system activation,Financial District/South Beach,393
+347,745 Alarm system activation,Glen Park,21
+348,745 Alarm system activation,Golden Gate Park,7
+349,745 Alarm system activation,Haight Ashbury,80
+350,745 Alarm system activation,Hayes Valley,121
+351,745 Alarm system activation,Inner Richmond,44
+352,745 Alarm system activation,Inner Sunset,89
+353,745 Alarm system activation,Japantown,38
+354,745 Alarm system activation,Lakeshore,44
+355,745 Alarm system activation,Lincoln Park,4
+356,745 Alarm system activation,Lone Mountain/USF,79
+357,745 Alarm system activation,Marina,138
+358,745 Alarm system activation,McLaren Park,3
+359,745 Alarm system activation,Mission,367
+360,745 Alarm system activation,Mission Bay,126
+361,745 Alarm system activation,Nob Hill,194
+362,745 Alarm system activation,Noe Valley,48
+363,745 Alarm system activation,North Beach,84
+364,745 Alarm system activation,Oceanview/Merced/Ingleside,20
+365,745 Alarm system activation,Outer Mission,21
+366,745 Alarm system activation,Outer Richmond,85
+367,745 Alarm system activation,Pacific Heights,162
+368,745 Alarm system activation,Portola,12
+369,745 Alarm system activation,Potrero Hill,72
+370,745 Alarm system activation,Presidio Heights,47
+371,745 Alarm system activation,Russian Hill,121
+372,745 Alarm system activation,Seacliff,10
+373,745 Alarm system activation,South of Market,430
+374,745 Alarm system activation,Sunset/Parkside,73
+375,745 Alarm system activation,Tenderloin,620
+376,745 Alarm system activation,Twin Peaks,24
+377,745 Alarm system activation,Visitacion Valley,18
+378,745 Alarm system activation,West of Twin Peaks,45
+379,745 Alarm system activation,Western Addition,205
