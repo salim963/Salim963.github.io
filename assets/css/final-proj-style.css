@@ -1,23 +1,23 @@
 /* Navbar Styles */
 nav {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 li {
-  margin: 0 20px;
+    margin: 0 20px;
 }
 
 a {
@@ -26,19 +26,37 @@ a {
 
 /* Dropdown styles */
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border-radius: 4px;
-  padding: 10px;
-  min-width: 200px;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        margin: 10px 0;
+    }
+    .dropdown-content {
+        position: static;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
 }
 
 .dropdown:hover .dropdown-content {
@@ -116,7 +134,7 @@ a {
     width: 600px;
     margin-left: 10px;
 }
-            
+
 .battalion_plot{
     margin-left: 20px;
     border-radius: 20px;
@@ -258,4 +276,58 @@ margin-bottom: 5%;
 
 section{
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        margin: 10px 0;
+    }
+    .header {
+        height: 400px;
+    }
+    .header-title {
+        font-size: 36px;
+    }
+    .header-subtitle {
+        font-size: 20px;
+    }
+    .body-content {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .conclusion {
+        width: 100%;
+        margin-right: 0;
+    }
+    .explainer {
+        width: 100%;
+        margin-left: 0;
+    }
+    .big_plots {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .introduction_image img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    .image-div {
+        margin-left: 0;
+    }
+    .youtube {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+    .plot-for-neighborhood {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
 }
